@@ -4,77 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pertamaku</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f5ef;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #557c55;
-            color: white;
-            padding: 35px 20px;
-        }
-
-        main {
-            padding: 40px 20px;
-        }
-
-        .kartu {
-            background-color: white;
-            max-width: 500px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 15px;
-        }
-
-        button {
-            background-color: #557c55;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        footer {
-            margin-top: 40px;
-            padding: 20px;
-            color: #666;
-        }
-    </style>
+    <meta name="description" content="Digital Atelier - Premium digital templates, ebooks and creative resources.">
+    <title>Digital Atelier | Creative Digital Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Selamat Datang!</h1>
-        <p>Ini adalah website pertama saya.</p>
+    <div class="announcement">
+        YOUR CREATIVE SPACE — DISCOVER SOMETHING BEAUTIFUL
+    </div>
+
+    <header class="navbar">
+        <a href="#" class="logo">DIGITAL<span>ATELIER.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#products" class="nav-button">
+            Explore Store <span>↗</span>
+        </a>
     </header>
 
     <main>
-        <div class="kartu">
-            <h2>Belajar GitHub</h2>
 
-            <p>
-                Saya sedang belajar membuat website
-                dengan bantuan teknologi dan AI.
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">A LITTLE SPACE FOR BIG IDEAS</p>
+
+                <h1>Create beautifully.<br>
+                    <em>Live creatively.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Thoughtfully designed digital products to inspire
+                    your creativity, simplify your work, and elevate
+                    your everyday life.
+                </p>
+
+                <a href="#products" class="primary-button">
+                    Discover Our Collection <span>→</span>
+                </a>
+
+                <div class="hero-note">
+                    ✦ Digital products made with purpose
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card card-one">
+                    <span>01 / CREATE</span>
+                    <div class="visual-art">✳</div>
+                    <strong>Creative<br>Templates</strong>
+                </div>
+
+                <div class="visual-card card-two">
+                    <span>02 / LEARN</span>
+                    <div class="visual-art">Aa</div>
+                    <strong>Digital<br>Knowledge</strong>
+                </div>
+
+                <div class="visual-card card-three">
+                    <span>03 / PLAN</span>
+                    <div class="visual-art">✧</div>
+                    <strong>Everyday<br>Essentials</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div>✦ INSTANT DIGITAL ACCESS</div>
+            <div>✦ THOUGHTFULLY DESIGNED</div>
+            <div>✦ MADE FOR EVERYDAY CREATIVITY</div>
+        </section>
+
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE COLLECTION</p>
+                    <h2>Find your next <em>favorite.</em></h2>
+                </div>
+
+                <p class="section-description">
+                    A curated collection of digital goods
+                    designed to make life a little more beautiful.
+                </p>
+            </div>
+
+            <div class="shop-controls">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search digital products..."
+                    aria-label="Search products"
+                >
+
+                <div class="filters">
+                    <button class="filter active" data-category="all">All</button>
+                    <button class="filter" data-category="template">Templates</button>
+                    <button class="filter" data-category="ebook">E-books</button>
+                    <button class="filter" data-category="planner">Planners</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+
+                <article class="product-card" data-category="template">
+                    <div class="product-image cover-template">
+                        <span class="product-label">BEST SELLER</span>
+                        <div class="cover-art">
+                            <small>THE CREATIVE COLLECTION</small>
+                            <strong>Social Media<br>Kit</strong>
+                            <span>CANVA TEMPLATE</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-type">CANVA TEMPLATE</div>
+                        <h3>Elegant Social Media Kit</h3>
+                        <p>Editable templates for your brand.</p>
+                        <div class="product-bottom">
+                            <strong>Rp49.000</strong>
+                            <button class="add-button" data-product="Elegant Social Media Kit">Add +</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="ebook">
+                    <div class="product-image cover-ebook">
+                        <span class="product-label">NEW ARRIVAL</span>
+                        <div class="cover-art">
+                            <small>A GUIDE TO BETTER LIVING</small>
+                            <strong>The Art of<br>Slow Living</strong>
+                            <span>DIGITAL E-BOOK</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-type">DIGITAL E-BOOK</div>
+                        <h3>The Art of Slow Living</h3>
+                        <p>A thoughtful guide to mindful living.</p>
+                        <div class="product-bottom">
+                            <strong>Rp39.000</strong>
+                            <button class="add-button" data-product="The Art of Slow Living">Add +</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="planner">
+                    <div class="product-image cover-planner">
+                        <div class="cover-art">
+                            <small>MAKE SPACE FOR YOURSELF</small>
+                            <strong>Daily<br>Planner</strong>
+                            <span>DIGITAL PLANNER</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-type">DIGITAL PLANNER</div>
+                        <h3>Minimalist Daily Planner</h3>
+                        <p>Organize your days with intention.</p>
+                        <div class="product-bottom">
+                            <strong>Rp29.000</strong>
+                            <button class="add-button" data-product="Minimalist Daily Planner">Add +</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="emptyMessage" class="empty-message" hidden>
+                No products found. Try another keyword.
             </p>
+        </section>
 
-            <button onclick="alert('Alhamdulillah! Website saya berhasil!')">
-                Klik Saya
-            </button>
-        </div>
+        <section class="about-section" id="about">
+            <p class="eyebrow">A NOTE FROM US</p>
+            <h2>Small digital things.<br><em>Meaningful possibilities.</em></h2>
+            <p>
+                We believe good design should make everyday life
+                easier, more inspiring, and more beautiful.
+                Welcome to our little creative corner.
+            </p>
+            <a href="#products" class="text-link">Explore the collection →</a>
+        </section>
+
     </main>
 
-    <footer>
-        <p>Website dibuat oleh saya | 2026</p>
+    <footer id="contact">
+        <a href="#" class="logo">DIGITAL<span>ATELIER.</span></a>
+        <p>Thoughtful digital goods for creative minds.</p>
+        <small>© 2026 Digital Atelier. All rights reserved.</small>
     </footer>
 
+    <div class="cart-notice" id="cartNotice" role="status" aria-live="polite">
+        Added to your collection.
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
